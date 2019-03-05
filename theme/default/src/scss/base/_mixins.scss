@@ -1,9 +1,8 @@
-@mixin text($size:12px, $family:$ubuntu, $color:$black, $weight:300, $lineheight:null){
+@mixin text($size:12px, $family:$ubuntu, $color:$black, $weight:300){
     font-size: $size;
     font-family: $family;
     color: $color;
     font-weight: $weight;
-    line-height: $lineheight;
 }
 
 @mixin button($color1:#cccccc, $color2:#d1d2d4, $color3:#e7e7e8 ){

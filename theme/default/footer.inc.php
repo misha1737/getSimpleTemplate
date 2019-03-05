@@ -14,15 +14,11 @@
 	<footer class="clearfix" >
 
 		<?php get_footer(); ?>
-	
-	
-
-
 
 	</footer>
 
 
 <script src="<?php get_theme_url(); ?>/build/js/all.js"></script>
-
+	<script src="<?php get_theme_url(); ?>/libs/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

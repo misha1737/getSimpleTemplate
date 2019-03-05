@@ -25,7 +25,6 @@
     "gulp-watch": "^5.0.1"
   },
   "dependencies": {
-    "gulp-pug": "^4.0.1",
     "npm": "^6.8.0"
   }
 }

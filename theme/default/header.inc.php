@@ -9,20 +9,13 @@
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="ua" > <!--<![endif]-->
 <head>
 <meta charset="utf-8">
-
   <title><?php get_page_clean_title(); ?> - <?php get_site_name(); ?></title>
-	
 	<meta name="robots" content="index, follow">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
 	<link href="<?php get_theme_url(); ?>/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="<?php get_theme_url(); ?>/build/css/application.css?v=<?php echo get_site_version(); ?>" rel="stylesheet">
 
-
-		<link href="<?php get_theme_url(); ?>/build/css/application.css?v=<?php echo get_site_version(); ?>" rel="stylesheet">
-	<script src="<?php get_theme_url(); ?>/libs/jquery/jquery-2.1.4.min.js"></script>
-	<script src="<?php get_theme_url(); ?>/libs/bootstrap/js/bootstrap.min.js"></script>
 
 	   
 	<!--[if lt IE 9]>
@@ -38,43 +31,26 @@
 
 </head> 
 <body id="<?php get_page_slug(); ?>" >
-
 	<!-- site header -->
 	<header>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="LogoBlockHeader">
-				<img class="img-responsive headerLogo" src="<?php get_theme_url(); ?>/images/logoBR.svg" alt="">
-				<div class="linkBlock">
-				<a class="linkBlock__link" href="#">ДНІ ДЕВЕЛОПЕРА | </a>  
-				<a href="#" class="linkBlock__link">УМОВИ УЧАСТІ</a>
-				</div>
 
-			</div>
-			<div class="LogoKBUBlockHeader">
-			<img class="img-responsive LogoKBUBlockHeader__img" src="<?php get_theme_url(); ?>/images/kbuLogo.svg" alt="">
-			</div>
-
-			<div class="sloganBox">
-				<h3 class="sloganBox__info">17-18 ТРАВНЯ, НСК ОЛІМПІЙСЬКИЙ</h3>
-				<p></p>
-				<h4 class="sloganBox__info">BIM-REVOLUTION</h4>
-			</div>
-			
+		<div class="language-items ">
 
 
-			<img class="img-responsive headerImg" src="<?php get_theme_url(); ?>/images/header.jpg" alt="">	
-			<div class="registrationBlock">
-				<a href="#">
-				<img class="registrationBlock__img headerArrow" src="<?php get_theme_url(); ?>/images/arow.svg" alt=""><p> ЗАРЕЄСТРУВАТИСЬ</p>
+			<div class="language-item l_en">
+				<a href="<?php echo htmlspecialchars(return_i18n_setlang_url('en'));?>">eng
 				</a>
-			</div>	
-		</div>
-	</div>	
-								
-				
-		
-			
-
-				
+				</div>
+				<div class="language-item l_ru">
+				<a href="<?php echo htmlspecialchars(return_i18n_setlang_url('ru'));?>">ru
+				</a>
+				</div>
+				<div class="language-item l_ua">
+				<a href="<?php echo htmlspecialchars(return_i18n_setlang_url('ua'));?>">ua	
+				</a>
+				</div>
+			</div>		
+			<ul class="menu">
+				<?php get_i18n_navigation(return_page_slug(),0,99, I18N_SHOW_MENU); ?>
+			</ul>
   </header>

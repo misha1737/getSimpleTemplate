@@ -348,21 +348,37 @@
 	"buffers":
 	[
 		{
-			"file": "theme/default/footer.inc.php",
+			"file": "theme/default/template.php",
 			"settings":
 			{
-				"buffer_size": 470,
+				"buffer_size": 829,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "theme/default/header.inc.php",
+			"file": "theme/default/src/scss/base/_base.scss",
 			"settings":
 			{
-				"buffer_size": 2705,
+				"buffer_size": 94,
 				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "theme/default/functions.php",
+			"settings":
+			{
+				"buffer_size": 1086,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "theme/default/src/scss/base/_animation.scss",
+			"settings":
+			{
+				"buffer_size": 150,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -408,19 +424,24 @@
 	],
 	"file_history":
 	[
-		"/D/OpenServer/OpenServer/domains/template.ua/theme/default/src/scss/base/_animation.scss",
-		"/D/OpenServer/OpenServer/domains/template.ua/theme/default/src/scss/base/_fonts.scss",
-		"/D/OpenServer/OpenServer/domains/template.ua/theme/default/src/scss/layout/_header.scss",
-		"/D/OpenServer/OpenServer/domains/template.ua/theme/default/src/scss/base/_base.scss",
-		"/D/OpenServer/OpenServer/domains/template.ua/gulpFile.js",
-		"/D/OpenServer/OpenServer/domains/template.ua/theme/default/footer.inc.php",
-		"/D/OpenServer/OpenServer/domains/template.ua/theme/default/header.inc.php",
-		"/D/OpenServer/OpenServer/domains/template.ua/theme/default/src/scss/layout/_footer.scss",
-		"/D/OpenServer/OpenServer/domains/template.ua/package.json",
-		"/D/OpenServer/OpenServer/domains/template.ua/theme/default/template.php",
 		"/D/OpenServer/OpenServer/domains/template.ua/theme/default/src/scss/layout/_newspages.scss",
-		"/D/OpenServer/OpenServer/domains/template.ua/theme/default/src/scss/layout/_player.scss",
+		"/D/OpenServer/OpenServer/domains/template.ua/theme/default/footer.inc.php",
+		"/D/OpenServer/OpenServer/domains/template.ua/theme/default/src/scss/layout/_index.scss",
+		"/D/OpenServer/OpenServer/domains/template.ua/theme/default/src/js/main.js",
+		"/D/OpenServer/OpenServer/domains/template.ua/gulpFile.js",
+		"/D/OpenServer/OpenServer/domains/template.ua/theme/default/src/scss/base/_variables.scss",
+		"/D/OpenServer/OpenServer/domains/template.ua/theme/default/src/scss/layout/_header.scss",
+		"/D/OpenServer/OpenServer/domains/template.ua/theme/default/src/scss/layout/_footer.scss",
+		"/D/OpenServer/OpenServer/domains/template.ua/theme/default/header.inc.php",
 		"/D/OpenServer/OpenServer/domains/template.ua/theme/default/src/scss/layout/_main.scss",
+		"/D/OpenServer/OpenServer/domains/template.ua/theme/default/template.php",
+		"/D/OpenServer/OpenServer/domains/template.ua/theme/default/src/scss/layout/_vustypi.scss",
+		"/D/OpenServer/OpenServer/domains/template.ua/theme/default/src/scss/base/_fonts.scss",
+		"/D/OpenServer/OpenServer/domains/template.ua/theme/default/src/scss/base/_mixins.scss",
+		"/D/OpenServer/OpenServer/domains/template.ua/theme/default/src/scss/base/_animation.scss",
+		"/D/OpenServer/OpenServer/domains/template.ua/theme/default/src/scss/base/_base.scss",
+		"/D/OpenServer/OpenServer/domains/template.ua/package.json",
+		"/D/OpenServer/OpenServer/domains/template.ua/theme/default/src/scss/layout/_player.scss",
 		"/D/wamp/www/bim-revolution/theme/bim-revolution/scss/layout/_header.scss",
 		"/D/wamp/www/bim-revolution/theme/bim-revolution/scss/layout/_main.scss",
 		"/D/wamp/www/bim-revolution/theme/bim-revolution/libs/main.js",
@@ -530,12 +551,7 @@
 		"/D/wamp/www/LMtas/sendCard.php",
 		"/D/wamp/www/LMtas/replace",
 		"/D/wamp/www/LMtas/js/app.js",
-		"/D/wamp/www/LMtas/libs/unslider.js",
-		"/D/wamp/www/LMtas/js/hammer.min.js",
-		"/D/wamp/www/LMtas/libs/main.js",
-		"/D/wamp/www/Landing2019/scss/layout/_index.scss",
-		"/D/wamp/www/LMtas/page2.php",
-		"/D/wamp/www/LMtas/scss/base/_mixins.scss"
+		"/D/wamp/www/LMtas/libs/unslider.js"
 	],
 	"find":
 	{
@@ -575,47 +591,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "theme/default/footer.inc.php",
+					"file": "theme/default/template.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 470,
+						"buffer_size": 829,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								382,
-								382
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "theme/default/header.inc.php",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 2705,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								797,
-								797
+								680,
+								680
 							]
 						],
 						"settings":
@@ -624,10 +612,95 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 96.0,
+						"translation.y": 240.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "theme/default/src/scss/base/_base.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 94,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								71,
+								71
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "theme/default/functions.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1086,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								682,
+								682
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 48.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "theme/default/src/scss/base/_animation.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 150,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
