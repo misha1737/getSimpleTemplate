@@ -1,0 +1,473 @@
+#index{
+
+.titleBox{
+	border-bottom: 3px solid $orange;
+		border-top: 3px solid $orange;
+	h1{
+		@include text(80px);
+		font-weight: 900;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	h2{
+		@include text(36px);
+		font-weight: 500;
+		text-align: center;
+		text-transform: uppercase;
+
+	}
+
+	margin-bottom:30px;
+}
+
+h3{
+	margin:30px 0;
+			@include text(42px);
+			font-weight: 900;
+			text-align: center;
+			text-transform: uppercase;
+}
+article h4{
+	margin:30px 0;
+	padding:5px;
+			@include text(36px);
+			text-align: center;
+			background-color: $llGray;
+			color:gray;
+			cursor:pointer;
+			text-transform: uppercase;
+			span{
+					margin-left: 10px;
+					font-size: 24px;
+				&#dayUp, &#dayUp{
+					display:none;
+				}
+
+			}
+	&.active {
+		span#dayUp, span#dayUp{
+					display:inline-block;
+				}
+		span#dayDown, span#dayDown{
+					display:none;
+				}		
+	}
+
+}
+
+
+
+
+.ProgramBox{
+	margin:10px 0;
+
+		&.ProgramBox_darkTheme{
+					.ProgramBox__info{
+					border-left: 6px solid $dBlue;
+					}
+				}
+	.ProgramBox__time{
+		@include text(28px);
+		color: $gray;
+		width:100%;
+		border-bottom: 2px solid $blue;
+	}
+	.ProgramBox__info{
+		margin-top: 2px;
+		padding-left: 8px;
+		@include text(12px);
+		color:$dBlue;
+		border-left: 6px solid $lBlue;
+		font-weight: 900;
+	}
+	.ProgramBox__coment{
+		@include text(14px);
+		color:$gray;
+		font-weight: 500;
+		font-style: italic;
+
+	}
+
+}
+
+.paketApi{
+	min-height: 690px;
+	.buttonBlock{
+			height:55px;
+		position: relative;
+		padding-bottom:10px; 
+		overflow:hidden;
+	
+			.paketButton{
+					//background:green;
+					position: absolute;
+					cursor:pointer;
+					z-index:10;
+					left:0;
+					//height:50px;
+
+				.paketButton__title{
+					@include text(14px);
+					font-weight: 900;
+					
+					padding: 5px 15px;
+					margin:0;
+					padding-bottom: 0px;
+					color:$lGray;
+				//	display: inline-block;
+				}
+
+				.paketButton__text{
+					@include text(14px);
+					
+					padding: 15px 15px;
+					margin:0;
+					padding-top: 0px;
+					color:$lGray;
+					//display: inline-block;
+
+
+				}
+				&.active{
+					.paketButton__text, .paketButton__title{
+						color:white;
+					}
+				}
+
+				&.paketButton_lBlue{
+					height:50px;
+					width:185px;
+						background-image: url(images/grayB.svg);
+						background-size: cover;
+					//	background-image: url(images/standartB.svg);
+					//	background-size: cover;
+						&.active{
+					z-index: 20;
+					background-image: url(images/standartB.svg);
+						&:after{
+							background-color: $lBlue;
+						}
+					}
+						&:after{
+						position: absolute;
+						content: " ";
+						margin-top:-10px;
+						height:7px;
+						width:600px;
+						background-color: $llGray;
+						display: inline-block;
+					}
+
+				}
+				&.paketButton_blue{
+					height:50px;
+					width:185px;
+					margin-left: 140px;
+						background-image: url(images/grayB.svg);
+					background-size: cover;
+					//background-image: url(images/premiumB.svg);
+					//background-size: cover;
+						&.active{
+					z-index: 20;
+					background-image: url(images/premiumB.svg);
+						&:after{
+							background-color: $blue;
+						}
+					}
+						&:after{
+						position: absolute;
+						content: " ";
+						margin-top:-10px;
+						height:7px;
+						width:600px;
+						background-color: $llGray;
+						display: inline-block;
+					}
+				}
+				&.paketButton_dBlue{
+						height:50px;
+					width:185px;
+					margin-left: 280px;
+						background-image: url(images/grayB.svg);
+					background-size: cover;
+					//background-image: url(images/vipB.svg);
+					//background-size: cover;
+					&.active{
+					z-index: 20;
+					background-image: url(images/vipB.svg);
+						&:after{
+							background-color: $dBlue;
+						}
+					}
+					&:after{
+						position: absolute;
+						content: " ";
+						margin-top:-10px;
+						height:7px;
+						width:600px;
+						background-color: $llGray;
+						display: inline-block;
+					}
+				}
+
+			
+
+			}
+
+
+		}
+	
+
+	.paketBox{
+		width:100%;
+		display: none;
+		margin-bottom: 30px;
+
+	
+
+
+
+		.paketBoxItem{
+			margin-top: 2px;
+			padding:5px;
+			position: relative;
+			border-bottom:2px solid $lGray;
+			border-left:6px solid $lBlue;
+		
+		
+			.paketBoxItem__title{
+				@include text(14px);
+				 letter-spacing: 3px;
+				 color:$gray;			
+			}
+
+			.paketBoxItem__coment{
+				@include text(12px);
+				padding-right:30px; 
+				font-weight: 900;
+				color:$lBlue;
+			}
+
+			.paketBoxItem__icon{
+				position: absolute;
+				right:5px;
+				top:12px;
+				background-image: url(images/apiOk.svg);
+				background-size: cover;
+				display: inline-block;
+				width:24px;
+				height:24px;
+			}
+			&.disabled{
+				border-left:6px solid $lGray;
+				.paketBoxItem__title{
+					
+					color:$lGray;
+				}
+				.paketBoxItem__coment{
+					color:$lGray;
+				}
+				.paketBoxItem__icon{
+					background-image: url(images/apiOff.svg);
+				}	
+
+			}
+
+		}
+
+			.paketBoxPrice{
+				background-color: $llGray;
+				border:10px solid $llGray;
+				.paketBoxPrice__info{
+					border-radius: 10px;
+					background-color: white;
+					@include text(14px);
+					padding:0 10px;
+					span{
+						color:$lBlue;
+					}
+				}
+			}
+	&.selected{
+		display:inline-block;
+	}
+
+
+
+
+
+	}
+	.paketBox.paketBox_Blue{
+		.paketBoxItem{
+			border-left:6px solid $blue;
+
+			.paketBoxItem__coment{
+				color:$blue;
+			}}
+			.paketBoxPrice .paketBoxPrice__info span{
+				color:$blue;
+			}
+
+		
+
+
+	}
+	.paketBox.paketBox_darkBlue{
+		.paketBoxItem{
+			border-left:6px solid $dBlue;
+			.paketBoxItem__coment{
+				color:$dBlue;
+			}}
+			.paketBoxPrice .paketBoxPrice__info span{
+				color:$dBlue;
+			}
+		
+
+
+	}
+
+
+
+}
+
+
+.otherOptions{
+
+.otherOptions__TitleBlock{
+
+	background-color: $lBlue;
+	border:5px solid $lBlue;
+	.otherOptions__TitleBlock{
+		@include text(16px);
+		text-align: center;
+		padding:5px 15px;
+		border-radius:20px;
+		background-color: white;
+	}
+}
+.otherOptions__option{
+	margin-top: 2px;
+	background-color: $lllGray;
+	border-bottom:2px solid $lGray;
+	@include text(14px);
+	letter-spacing: 3px;
+	padding:5px 10px;
+
+		span{
+			float:right;
+			color:$blue;
+			font-weight: 900;
+		}
+	&.otherOptions_bottom{
+		.text{
+			opacity: 0;
+		}
+		border-radius:5px;
+		border-bottom:2px solid $llGray;
+	}
+
+
+	}
+
+
+.otherOptions__hotelBlock{
+margin-top: 30px;
+	background-color: $lBlue;
+	border:5px solid $lBlue;
+	.otherOptions__hotel{
+		background-color: $lBlue;
+		border:5px solid $lBlue;
+		@include text(16px);
+		text-align: center;
+		padding:5px 15px;
+		border-radius:20px;
+		background-color: white;
+	}
+}
+
+}
+
+
+
+
+}
+#programaDay2, #programaDay1{
+	transition: 1.5s;
+max-height:0px;
+overflow:hidden;
+}
+@media only screen and (max-width : 1000px){
+.moadalRegistration .moadalRegistration__form .form-container{
+	width:310px;
+}
+#index{
+	.titleBox {
+			h1{
+			font-size: 29px;
+			}
+			h2{
+				font-size: 18px;
+			}
+		}
+		h3{
+			font-size: 22px;
+		}
+
+	}
+
+
+#index article .paketApi .buttonBlock{
+	height:28px;
+ .paketButton.paketButton_lBlue{
+	    height: 25px;
+    width: 100px;
+     //margin-left: 280px;
+     &:after{
+     	margin-top:5px;
+     }
+	}
+
+ .paketButton.paketButton_Blue{
+	    height: 25px;
+    width: 100px;   
+    margin-left: 80px;
+      &:after{
+     	margin-top:5px;
+     }
+	}
+
+ .paketButton.paketButton_dBlue{
+	    height: 25px;
+    width: 100px;
+     margin-left: 160px;
+       &:after{
+     	margin-top:5px;
+     }
+	}
+	.paketButton{
+		
+		.paketButton__title{
+			font-size: 10px;
+		}
+		.paketButton__text{
+		display:none;
+		}
+	}
+
+}
+
+
+
+
+
+}
+
+
+@media only screen and (max-width : 500px){
+	#index .otherOptions .otherOptions__option{
+		font-size: 10px;
+		letter-spacing: 1px;
+	}
+
+}

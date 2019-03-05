@@ -1,0 +1,24 @@
+footer{
+	background-color: $ddBlue;
+	.linkBlock{
+		a{
+		color:white;
+		text-decoration: none;
+		}
+	padding: 10px 0;
+
+	}
+
+
+
+}
+
+@media only screen and (max-width : 1000px){
+
+footer .linkBlock{
+	    padding: 15px;
+}
+
+
+
+}

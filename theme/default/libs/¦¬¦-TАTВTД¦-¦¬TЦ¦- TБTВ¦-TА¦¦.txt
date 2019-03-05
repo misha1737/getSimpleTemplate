@@ -1,0 +1,25 @@
+if($('body').attr("id")=='portfolo'){
+		var $filter=$("article h6");//скопіювати всі заголовки
+		var $img=$("article a");//скопіювати всі картинки
+		var $imgCategory=$("article img"); //категорія до якої належить картинка
+		$("article section h6").remove(); //видалити заголовки 
+		$("article section a").remove(); //видалити картинки
+		$('body article').append('<div id="leftBox" class="col-md-3 controls">'); //добавить блок слева
+		$('body article').append('<div id="Container" class="col-md-9 container mix_container">'); //добавить блок справа
+		//вставить заголовки в левый блок
+		for( var i=0; i<$filter.length; i++){
+			if(i==0){
+		$('#leftBox').append('<h6 data-filter="all" class="filter">'+$filter[0].innerHTML);//назначення першою кнопкою вибір всіх елементів
+			}else{
+			$('#leftBox').append('<h6 data-filter=".category-'+i+'" class="filter">'+$filter[i].innerHTML);	//кожин наступний заголовок отримує свою категорію
+			}
+		}
+		//присвоєня кожній картинці її категорію
+		for( var i=0; i<$img.length; i++){
+			var $imgClass=$($imgCategory[i]).attr('class');
+			$('#Container').append("<div class='obj"+i+" portfolioItem'>");
+			$("#Container .obj"+i+"").append("<a href="+$img[i].href+" class='item mix "+$imgClass+"'>"+$img[i].innerHTML);
+		}
+			//console.log($img[0].href);
+		//$("#Container").mCustomScrollbar();//скролбар
+	}

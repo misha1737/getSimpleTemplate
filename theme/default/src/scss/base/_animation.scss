@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+
+
+
+#index .paketApi .paketBox{
+	animation: opacity 0.8s ease-in-out;
+}
+
+
+
+@keyframes opacity{
+	from {opacity: 0.5;}
+to {opacity: 1;}
+}
